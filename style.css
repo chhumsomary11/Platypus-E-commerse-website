@@ -4,7 +4,7 @@ nav{
 
 main{
         height: 100vh;
-            margin-top:7% ;
+            margin-top:5% ;
 
 
 }
@@ -14,12 +14,6 @@ main{
     margin-right: 10px;
   }
 
-  /* #navbarMenu {
-  background-color: #787a7c;
-  margin-top:10px ;
-  padding: 1rem;
-  border-radius: 10px;
-} */
 
 .header-section{
     width: 100%;
