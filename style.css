@@ -12,17 +12,16 @@ main{
 
 }
 
-.navbar-brand{
-    transition: opacity 1.5s text-decoration 1.5s;
+.navbar-brand {
+  transition: transform 0.5s ease-in-out, opacity 1s;
 }
 
-
-.navbar-brand:hover{
-    text-decoration: underline;
-    opacity: 0.5;
-    transform: scale(1.25);
-  transition: all 0.3s ease-in-out;
+.navbar-brand:hover {
+  text-decoration: underline; /* this will toggle instantly */
+  opacity: 0.5;
+  transform: scale(1.25);
 }
+
 
 .navbar-brand:active{
     opacity: 0.5;
