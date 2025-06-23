@@ -1,3 +1,6 @@
+.navbar-brand{
+font-family: monospace;
+}
 nav{
     background-color: black;
 }
@@ -9,6 +12,21 @@ main{
 
 }
 
+.navbar-brand{
+    transition: opacity 1.5s text-decoration 1.5s;
+}
+
+
+.navbar-brand:hover{
+    text-decoration: underline;
+    opacity: 0.5;
+    transform: scale(1.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand:active{
+    opacity: 0.5;
+}
 
 .nav-item {
     margin-right: 10px;
@@ -23,4 +41,27 @@ main{
     background-position: center;
     background-size: cover;
 
+}
+
+.hero-section{
+    height: 30%;
+}
+
+.aside-section{
+        height: auto;
+
+}
+
+.model-img{
+    height: 100%;
+      transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+
+}
+
+.model-img:hover {
+  transform: scale(1.05);
+  /* transition: all 1s ease-in-out; */
+  box-shadow: 0 10px 20px rgba(207, 199, 199, 0.7);
+  border-radius: 10px;
+  cursor: pointer;
 }
