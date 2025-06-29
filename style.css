@@ -32,7 +32,7 @@ main{
   }
 
 
-.header-section{
+.first-section{
     width: 100%;
     height: inherit;
     background-image: url(image/cover.avif);
@@ -46,7 +46,7 @@ main{
     height: 30%;
 }
 
-.aside-section{
+.header-section{
         height: auto;
 
 }
@@ -64,3 +64,22 @@ main{
   border-radius: 10px;
   cursor: pointer;
 }
+
+.discovery-section{
+  /* height: 10; */
+}
+
+.deco-box{
+  height: 70vh;
+}
+
+.deco-img{
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.promotion-box{
+  border-radius: 30%;
+}
+
