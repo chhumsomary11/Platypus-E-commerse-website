@@ -6,13 +6,13 @@ nav{
 }
 
 main{
-        height: 100vh;
+        height: auto;
             margin-top:5% ;
 
 
 }
 
-.navbar-brand,  {
+.navbar-brand  {
   transition: transform 0.5s ease-in-out, opacity 1s;
 }
 
@@ -34,7 +34,7 @@ main{
 
 .first-section{
     width: 100%;
-    height: inherit;
+    height: 100%;
     background-image: url(image/cover.avif);
     background-repeat: no-repeat;
     background-position: center;
@@ -74,6 +74,7 @@ main{
 
 .deco-box{
   height: 70vh;
+  /* height: inherit; */
 }
 
 .deco-img{
