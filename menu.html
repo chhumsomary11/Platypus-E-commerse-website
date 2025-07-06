@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--  TITLE TAG (choose one or rotate based on season/campaign) -->
-    <title>Platypus | Trendy Online Clothes Shopping for All Styles</title>
+    <title>Platypus | Best Seller</title>
 
     <!-- META DESCRIPTION (max 155 characters) -->
     <meta
@@ -17,13 +17,6 @@
       content="platypus, online clothes shopping, clothes shop, trendy fashion, unisex clothing, men’s fashion, women’s clothing"
     />
 
-    <!--  BLOG CONTENT IDEAS FOR FUTURE USE -->
-    <!--
-    Future Blog Posts:
-    1. Why Platypus Is the Go-To Brand for Online Streetwear Style
-    2. Top 10 Must-Have Wardrobe Pieces from Platypus for Men & Women
-    3. Online Shopping with Platypus: A Guide to Finding Your Perfect Fit
-  -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -101,109 +94,37 @@
         </div>
       </div>
     </nav>
+
     <main>
-      <div
-        class="first-section d-flex align-items-center justify-content-center"
-      >
-        <!-- using bootstrap window.location.href function to get into another page -->
-        <button
-          onclick="window.location.href='menu.html'"
-          class="btn btn-light"
-          style="border-radius: 20px"
-        >
-          Shop Now!
-        </button>
-      </div>
-      <div
-        class="hero-section container-fluid d-flex flex-column align-items-center justify-content-center bg-light bg-gradient text-dark"
-      >
-        <p>Welcome to</p>
-        <h1>
-          <a class="navbar-brand" href="index.html"> Platypus </a>
-        </h1>
-      </div>
-      <div class="header-section bg-gradient bg-light container-fluid py-1">
-        <div
-          class="scroll-container row row-cols-1 row-cols-md-4 g-3 px-3 py-4 overflow-auto flex-nowrap"
-        >
-          <div class="col">
-            <img
-              class="model-img img-fluid"
-              src="image/clothes1.avif"
-              alt="clothes"
-            />
-          </div>
-          <div class="col">
-            <img
-              class="model-img img-fluid"
-              src="image/clothes2.avif"
-              alt="clothes"
-            />
-          </div>
-          <div class="col">
-            <img
-              class="model-img img-fluid"
-              src="image/clothes3.avif"
-              alt="clothes"
-            />
-          </div>
-          <div class="col">
-            <img
-              class="model-img img-fluid"
-              src="image/clothes4.avif"
-              alt="clothes"
-            />
+      <div class="hero-section" style="padding-top: 10vh; padding-bottom: 15vh">
+        <h1 class="text-center">Shop Now</h1>
+
+        <div class="category-container container mt-3">
+          <div class="row row-cols-3 row-cols-sm-3 row-cols-md-6 g-3">
+            <div class="col">
+              <a href="#" class="btn category-link w-100 py-2">Best-Seller</a>
+            </div>
+            <div class="col">
+              <a href="menu.html" class="btn category-link w-100 py-2">Top</a>
+            </div>
+            <div class="col">
+              <a href="#" class="btn category-link w-100 py-2">Bottom</a>
+            </div>
+            <div class="col">
+              <a href="#" class="btn category-link w-100 py-2">Dress</a>
+            </div>
+            <div class="col">
+              <a href="#" class="btn category-link w-100 py-2">Accessories</a>
+            </div>
+            <div class="col">
+              <a href="#" class="btn category-link w-100 py-2">On-Sale</a>
+            </div>
           </div>
         </div>
       </div>
-      <div
-        class="hero-section container-fluid bg-dark d-flex flex-column align-items-center justify-content-center text-white"
-      >
-        <h1>Elevating Your Taste</h1>
-        <p class="text-center">
-          Discover the Perfect Blend of Comfort and Trend with Our Exclusive
-          Collection. Explore Deals on Jeans, Sneakers, and More!
-        </p>
-      </div>
-      <div
-        class="discovery-section container-fluid bg-gradient bg-secondary-rgb py-3"
-      >
-        <div class="row row-cols-1 row-cols-md-3 g-3 py-4">
-          <div class="deco-box bg-light">
-            <img
-              class="deco-img img-fluid mb-1"
-              src="image/deco1.avif"
-              alt="decoration"
-            />
-            <img
-              class="deco-img img-fluid"
-              src="image/deco2.avif"
-              alt="decoration"
-            />
-          </div>
-          <div
-            class="col promotion-box deco-box bg-danger d-flex flex-column align-items-center justify-content-center text-white"
-          >
-            <h2>Promotion</h2>
-            <a href="#">
-              <h4>50% Off</h4>
-            </a>
-            <p>MidYear sale</p>
-          </div>
-          <div class="col deco-box bg-light">
-            <img
-              class="deco-img img-fluid mb-1"
-              src="image/deco3.avif"
-              alt="decoration"
-            />
-            <img
-              class="deco-img img-fluid"
-              src="image/deco4.avif"
-              alt="decoration"
-            />
-          </div>
-        </div>
-      </div>
+
+      <!-- //product -->
+      <div id="product-container" class="row row-cols-md-3 p-3"></div>
       <div
         class="sub-section container-fluid d-flex flex-column align-items-center justify-content-center p-3"
       >
@@ -261,6 +182,7 @@
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
