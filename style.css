@@ -132,14 +132,13 @@ main{
 
 #product-container{
   margin-top: 8vh;
-  display: flex;
 }
-.card{
+/* .card{
   height: 100%;
   width: 300px;
   
 
-}
+} */
 
 .product-img{
   height: 300px;
