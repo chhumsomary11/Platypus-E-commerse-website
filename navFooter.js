@@ -2,6 +2,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   includeHTML("navbar-placeholder", "nav.html");
   includeHTML("footer-placeholder", "footer.html");
+  includeHTML("subscribe-placeholder", "subscribe.html")
 });
 
 function includeHTML(id, file) {
