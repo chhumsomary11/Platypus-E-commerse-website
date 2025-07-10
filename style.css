@@ -47,6 +47,17 @@ main{
 
 }
 
+.contact-first-section{
+  position: relative;
+  width: 100%;
+    height: 100%;
+    background-image: url(image/contactBg.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 8%;
+}
+
 .hero-section{
     height: 30%;
 }
@@ -73,9 +84,7 @@ main{
   cursor: pointer;
 }
 
-.discovery-section{
-  /* height: 10; */
-}
+
 
 .deco-box{
   height: 70vh;
@@ -133,12 +142,7 @@ main{
 #product-container{
   margin-top: 8vh;
 }
-/* .card{
-  height: 100%;
-  width: 300px;
-  
 
-} */
 
 .product-img{
   height: 300px;
