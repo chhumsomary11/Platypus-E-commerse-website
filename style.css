@@ -36,6 +36,13 @@ main{
     margin-right: 10px;
   }
 
+.customize-dropdown{
+  position: relative;
+}
+
+
+
+
 
 .first-section{
     width: 100%;
@@ -56,6 +63,15 @@ main{
     background-position: center;
     background-size: cover;
     margin-top: 8%;
+}
+
+.aboutUs-first-section{
+   width: 100%;
+    height: 70vh;
+    background-image: url(image/aboutUsBG.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-section{

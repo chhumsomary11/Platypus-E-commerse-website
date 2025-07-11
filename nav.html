@@ -44,15 +44,39 @@
         <!--This is the collapsible part -->
 
         <div class="collapse navbar-collapse" id="navbarMenu">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav nav-pills ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="aboutUs.html">About Us </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="menu.html">Shop</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Short-by</a>
+            <!-- dropdown link -->
+            <li class="nav-item dropdown">
+              <!-- link -->
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Shop-by</a
+              >
+              <!-- menu -->
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="menu.html">Best-Seller</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Bottom</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Dress</a></li>
+                <li><a class="dropdown-item" href="#">Top</a></li>
+
+                <li>
+                  <a class="dropdown-item" href="#">On-sale %</a>
+                </li>
+              </ul>
             </li>
 
             <li class="nav-item">
