@@ -1,3 +1,4 @@
+//List of product
 const products = [
   {
     name: "Oversized Pants",
@@ -57,8 +58,10 @@ const products = [
   }
 ];
 
+//we take the empty container from the html element
 const container = document.getElementById("product-container");
 
+//empty string to store Card
 let content = "";
 
 for (let i = 0; i < products.length; i++) {
