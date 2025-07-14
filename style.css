@@ -184,3 +184,7 @@ transition: opacity 1s, transform ease-in-out 1s;
 .category-link:active{
   opacity: 0.9;
 }
+
+.offcanvas{
+  opacity: 0.9;
+}
