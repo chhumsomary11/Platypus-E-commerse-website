@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Checkout - Your Cart</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Navigation placeholder -->
+		<div id="navbar-placeholder"></div>
+
+		<!-- Main content with proper spacing for fixed navbar -->
+		<main class="container mt-5 pt-4 mb-4">
+			<!-- Cart status section -->
+			<div class="row mb-4">
+				<div class="col-12">
+					<div class="js-cart-status text-center p-3 bg-light rounded">
+						<p class="mb-2" style="font-size: 14px">
+							Buy $20.00 more to get free shipping
+						</p>
+						<p class="cart-status h5 mb-3">Your Cart</p>
+						<a
+							class="btn btn-dark explore-btn"
+							href="menu.html"
+							style="display: none"
+							>Explore Products!</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<!-- Cart summary container -->
+			<div class="row">
+				<div class="col-12">
+					<div class="summary-container">
+						<!-- Cart items will be inserted here -->
+						<div class="text-center py-5 loading-state">
+							<div class="spinner-border" role="status">
+								<span class="visually-hidden">Loading...</span>
+							</div>
+							<p class="mt-3">Loading your cart...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Checkout section -->
+			<div class="row mt-4">
+				<div class="col-12">
+					<hr />
+					<div
+						class="total d-flex justify-content-between align-items-center p-3 bg-light rounded"
+					>
+						<h5 class="mb-0">Subtotal</h5>
+						<h5 class="mb-0 amount">$0.00</h5>
+					</div>
+					<button class="btn btn-dark w-100 mt-3 checkout-btn" disabled>
+						Checkout
+					</button>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer placeholders -->
+		<div id="subscribe-placeholder"></div>
+		<div id="footer-placeholder"></div>
+
+		<!-- Scripts -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Load navigation first -->
+		<script src="script/navFooter.js"></script>
+
+		<!-- Then load checkout functionality -->
+		<script type="module">
+			// Wait for navigation to load before initializing checkout
+			window.addEventListener("DOMContentLoaded", () => {
+				// Small delay to ensure navigation is fully loaded
+				setTimeout(() => {
+					import("./script/checkout.js");
+				}, 100);
+			});
+		</script>
+	</body>
+</html>
