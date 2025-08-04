@@ -7,7 +7,7 @@ export let products = [
 		image: "product_image/big_Pants.webp",
 		inStock: true,
 		discount: false,
-		category: "bottom",
+		category: ["bottom", "best"],
 	},
 	{
 		id: 2,
@@ -17,7 +17,7 @@ export let products = [
 		image: "product_image/Lucy_shirt.avif",
 		inStock: true,
 		discount: true,
-		category: "top",
+		category: ["bottom", "best"],
 	},
 	{
 		id: 3,
@@ -25,7 +25,7 @@ export let products = [
 		name: "Unisex Sneakers",
 		price: 3000,
 		image: "product_image/miniBlue-dress.avif",
-		inStock: false,
+		inStock: true,
 		discount: true,
 		category: "dress", // Based on image filename
 	},
@@ -37,7 +37,7 @@ export let products = [
 		image: "product_image/Necklace_set.avif",
 		inStock: true,
 		discount: false,
-		category: "accessory",
+		category: ["accessory", "best"],
 	},
 	{
 		id: 5,
@@ -55,7 +55,7 @@ export let products = [
 		name: "Necklace",
 		price: 600,
 		image: "product_image/necklace.avif",
-		inStock: false,
+		inStock: true,
 		discount: false,
 		category: "accessory",
 	},
@@ -67,7 +67,7 @@ export let products = [
 		image: "product_image/wavyIce_skirt.avif",
 		inStock: true,
 		discount: false,
-		category: "bottom",
+		category: ["bottom", "best"],
 	},
 	{
 		id: 8,
