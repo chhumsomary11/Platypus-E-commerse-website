@@ -17,7 +17,7 @@ export let products = [
 		image: "product_image/Lucy_shirt.avif",
 		inStock: true,
 		discount: true,
-		category: ["bottom", "best"],
+		category: ["top", "best"],
 	},
 	{
 		id: 3,

@@ -208,19 +208,22 @@ if (modalAddToCartBtn) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-	// Render 'best' products by default on page load
-	renderProductsByCategory("best");
+	// Get the category from the URL (like menu.html?category=bottom)
+	const urlParams = new URLSearchParams(window.location.search);
+	const categoryFromURL = urlParams.get("category") || "best";
 
-	// Set 'best' category button as active (optional, for styling)
-	document
-		.querySelectorAll(".category-link")
-		.forEach((btn) => btn.classList.remove("active"));
-	const bestBtn = document.querySelector(
-		'.category-link[data-category="best"]'
-	);
-	if (bestBtn) bestBtn.classList.add("active");
+	// Render based on that category
+	renderProductsByCategory(categoryFromURL);
 
-	// Add click listeners for category buttons (if not added yet)
+	// Set active category button
+	document.querySelectorAll(".category-link").forEach((btn) => {
+		btn.classList.remove("active");
+		if (btn.dataset.category === categoryFromURL) {
+			btn.classList.add("active");
+		}
+	});
+
+	// Add click listeners for category buttons (again, if needed)
 	const categoryButtons = document.querySelectorAll(".category-link");
 	categoryButtons.forEach((btn) => {
 		btn.addEventListener("click", (e) => {
@@ -228,14 +231,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 			const selectedCategory = btn.dataset.category;
 
-			// Remove active class from all buttons
 			categoryButtons.forEach((b) => b.classList.remove("active"));
-
-			// Add active to clicked button
 			btn.classList.add("active");
 
-			// Render products for selected category
 			renderProductsByCategory(selectedCategory);
+
+			// Change URL in browser to reflect selected category (without reload)
+			history.replaceState(null, "", `?category=${selectedCategory}`);
 		});
 	});
 });

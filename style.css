@@ -210,8 +210,9 @@ transition: opacity 1s, transform ease-in-out 1s;
   transform: scale(1.1);
 }
 
-.category-link:active{
-  opacity: 0.9;
+.active{
+  background-color: #f191ac !important;
+  font-weight: bold;
 }
 
 .offcanvas{
