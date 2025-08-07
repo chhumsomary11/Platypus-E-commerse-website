@@ -17,13 +17,10 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<nav class="navbar fixed-top bg-primary navbar-expand-md" ">
+		<nav class="navbar fixed-top bg-primary navbar-expand-md">
 			<div class="container-fluid">
 				<!-- This is the Brand name -->
-				<a class="navbar-brand" href="index.html">
-
-					Platypus
-				</a>
+				<a class="navbar-brand" href="index.html"> Platypus </a>
 				<!-- This is hamburger menu -->
 				<button
 					class="navbar-toggler navbar-expand-md"
@@ -56,6 +53,11 @@
 							<!-- menu -->
 							<ul class="dropdown-menu">
 								<li>
+									<a class="dropdown-item" href="menu.html?category=accessory"
+										>Accessories</a
+									>
+								</li>
+								<li>
 									<a class="dropdown-item bestBtn" href="menu.html"
 										>Best-Seller</a
 									>
@@ -73,32 +75,38 @@
 								<li>
 									<a class="dropdown-item" href="menu.html?category=top">Top</a>
 								</li>
-								<li>
-									<a class="dropdown-item" href="menu.html?category=accessory"
-										>Accessories</a
-									>
-								</li>
 
-								<li>
+								<!-- <li>
 									<a class="dropdown-item" href="menu.html?category=on-sale"
 										>On-sale %</a
 									>
-								</li>
+								</li> -->
 							</ul>
 						</li>
-						<!-- add to cart off canvas -->
+						<!-- add to cart						 -->
 						<li class="nav-item">
 							<a class="nav-link" href="checkout.html" role="button">
 								My cart
-								<img
-									src="image/shopping-cart-svgrepo-com.svg"
-									alt="Cart logo"
-									width="20"
-									height="20"
-									class="d-inline-block align-middle"
-								/>
+								<div class="position-relative d-inline-block">
+									<img
+										src="image/shopping-cart-svgrepo-com.svg"
+										alt="Cart logo"
+										width="20"
+										height="20"
+										class="d-inline-block align-middle"
+									/>
+									<span
+										id="cart-count"
+										class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+										style="font-size: 0.6rem; display: none"
+									>
+										0
+									</span>
+								</div>
 							</a>
 						</li>
+
+						<!-- contact us btn -->
 
 						<li class="nav-item">
 							<button

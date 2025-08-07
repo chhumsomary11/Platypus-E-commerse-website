@@ -1,5 +1,6 @@
 import { products } from "../data/products.js";
-import { carts } from "../data/carts.js";
+import { getCart } from "../data/carts.js";
+let carts = getCart();
 
 let productContainer = document.querySelector(".product-container");
 
@@ -64,7 +65,7 @@ function renderProductsByCategory(category) {
                         <div class="added-btn js-added" style="display: none;">
                             <span> Added</span>
                         </div>
-                        <button data-product-id="${product.id}" class="cartBtn btn btn-primary w-100">Add to cart</button>
+                        <button data-product-id="${product.id}" class="cartBtn btn btn-primary w-100">More Detail</button>
                     </div>
                 </div>
             </div>`;
@@ -87,8 +88,7 @@ function attachCardEventListeners() {
 			if (!product) return;
 
 			document.getElementById("modalProductName").textContent = product.name;
-			document.getElementById("modalProductDescription").textContent =
-				product.description || "No description available.";
+
 			document.getElementById("modalProductImage").src = product.image;
 			document.getElementById("modalProductImage").alt = product.name;
 
@@ -192,6 +192,7 @@ if (modalAddToCartBtn) {
 		}
 
 		saveToLocalStorage();
+
 		window.dispatchEvent(new CustomEvent("cartUpdated"));
 
 		const modalEl = document.getElementById("productModal");
@@ -242,6 +243,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
-export function saveToLocalStorage() {
-	localStorage.setItem("cart", JSON.stringify(carts));
+export function saveToLocalStorage(force = false) {
+	if (carts.length === 0 || force) {
+		localStorage.removeItem("cart");
+		console.log("🗑️ Cart forcibly removed from localStorage");
+	} else {
+		localStorage.setItem("cart", JSON.stringify(carts));
+		console.log("💾 Cart saved to localStorage:", carts);
+	}
 }
