@@ -16,17 +16,17 @@ export let products = [
 		price: 1800,
 		image: "product_image/Lucy_shirt.avif",
 		inStock: true,
-		discount: true,
+		discount: false,
 		category: ["top", "best"],
 	},
 	{
 		id: 3,
 
-		name: "Unisex Sneakers",
-		price: 3000,
+		name: "Mini Blue Dress",
+		price: 1500,
 		image: "product_image/miniBlue-dress.avif",
 		inStock: true,
-		discount: true,
+		discount: false,
 		category: "dress", // Based on image filename
 	},
 	{
@@ -46,7 +46,7 @@ export let products = [
 		price: 2500,
 		image: "product_image/Sweater.avif",
 		inStock: true,
-		discount: true,
+		discount: false,
 		category: "top",
 	},
 	{
@@ -76,7 +76,17 @@ export let products = [
 		price: 900,
 		image: "product_image/Sagi-silky-blouse.jpg",
 		inStock: true,
-		discount: true,
+		discount: false,
 		category: "top",
+	},
+	{
+		id: 9,
+
+		name: "Pink Corset Dress",
+		price: 1500,
+		image: "product_image/pink corset.jpg",
+		inStock: true,
+		discount: false,
+		category: ["dress", "best"],
 	},
 ];

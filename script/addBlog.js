@@ -20,6 +20,15 @@ let blogs = [
   Together, we’re redefining what it means to dress with purpose — supporting each other to express unique identities while honoring shared values. 
   Discover how community-driven style inspires new trends rooted in culture, inclusivity, and empowerment, and why being part of this movement means more than just wearing clothes — it means belonging.`,
 	},
+
+	{
+		img: "image/blog6.png",
+		title: "Sustainable Fashion: Loving Our Planet, Loving Ourselves",
+		sub_title: "How conscious choices shape a better future",
+		description: `In a world where style meets responsibility, sustainable fashion is more than a trend — it's a movement toward caring for our planet and ourselves. 
+  This blog dives into how making eco-friendly choices in clothing can empower women to express their beauty without compromise. 
+  Learn about materials, mindful shopping, and how embracing sustainability nurtures confidence and authenticity, proving that fashion can be fierce *and* kind to the Earth.`,
+	},
 ];
 
 //take the empty container
