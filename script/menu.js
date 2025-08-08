@@ -53,7 +53,7 @@ function renderProductsByCategory(category) {
 		}
 
 		allContent += `
-            <div class="col mb-4 js-cart-item cart-item-container-${product.id}"
+            <div class="col mb-4 js-cart-item cart-item-container-${product.id} productContainer"
                 data-product-id= "${product.id}">
                 <div class="card shadow-sm position-relative">
                     ${stockBadge}
