@@ -1,16 +1,15 @@
 ## Hi there 👋
+# Platypus | e-commerce website
+<p>Platypus is an e-commerce website for selling girlie clothes. This project is built from scratch, with HTML, CSS, and Javascript. However, for styling, we integrate with Bootstrap to help handling the layout. </br>
+</p>
+### Functions:
+<ul>
+  <li> Add to cart (Alerting the count badge)</li>
+    <li> Save to Local storage</li>
+        <li> checkout </li>
 
-<!--
-**chhumsomary11/chhumsomary11** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+</ul>
+
+
