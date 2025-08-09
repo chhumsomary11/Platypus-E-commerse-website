@@ -17,40 +17,55 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<nav class="navbar fixed-top navbar-expand-md">
+		<nav class="navbar fixed-top navbar-expand-md bg-dark">
 			<div class="container-fluid">
-				<!-- This is the Brand name -->
-				<a class="navbar-brand" href="index.html"> Platypus </a>
-				<!-- This is hamburger menu -->
-				<button
-					class="navbar-toggler navbar-expand-md"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarMenu"
-				>
-					<span class="navbar-toggler-icon navbar-expand-md"></span>
-				</button>
+				<!-- Brand -->
+				<a class="navbar-brand text-white" href="index.html">Platypus</a>
 
-				<!--This is the collapsible part -->
+				<!-- Mobile: cart + hamburger -->
+				<div class="d-flex align-items-center d-md-none">
+					<!-- Cart -->
+					<a
+						class="nav-link text-white me-3"
+						href="checkout.html"
+						role="button"
+					>
+						<div class="position-relative d-inline-block">
+							<i class="bi bi-bag-heart"></i>
+							<span
+								id="cart-count"
+								class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+								style="font-size: 0.6rem; display: none"
+								>0</span
+							>
+						</div>
+					</a>
 
+					<!-- Hamburger -->
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarMenu"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+
+				<!-- Collapsible menu -->
 				<div class="collapse navbar-collapse" id="navbarMenu">
-					<ul class="navbar-nav nav-pills ms-auto mb-2 mb-lg-0">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-start">
 						<li class="nav-item">
-							<a class="nav-link" href="aboutUs.html">About Us </a>
+							<a class="nav-link text-white" href="aboutUs.html">About Us</a>
 						</li>
-
-						<!-- dropdown link -->
+						<!-- Dropdown -->
 						<li class="nav-item dropdown">
-							<!-- link -->
 							<a
-								class="nav-link dropdown-toggle"
-								data-bs-toggle="dropdown"
+								class="nav-link dropdown-toggle text-white"
 								href="#"
-								role="button"
-								aria-expanded="false"
+								data-bs-toggle="dropdown"
 								>Shop-by</a
 							>
-							<!-- menu -->
 							<ul class="dropdown-menu">
 								<li>
 									<a class="dropdown-item" href="menu.html?category=accessory"
@@ -75,39 +90,9 @@
 								<li>
 									<a class="dropdown-item" href="menu.html?category=top">Top</a>
 								</li>
-
-								<!-- <li>
-									<a class="dropdown-item" href="menu.html?category=on-sale"
-										>On-sale %</a
-									>
-								</li> -->
 							</ul>
 						</li>
-						<!-- add to cart						 -->
-						<li class="nav-item">
-							<a class="nav-link" href="checkout.html" role="button">
-								My cart
-								<div class="position-relative d-inline-block">
-									<img
-										src="image/shopping-cart-svgrepo-com.svg"
-										alt="Cart logo"
-										width="20"
-										height="20"
-										class="d-inline-block align-middle"
-									/>
-									<span
-										id="cart-count"
-										class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-										style="font-size: 0.6rem; display: none"
-									>
-										0
-									</span>
-								</div>
-							</a>
-						</li>
-
-						<!-- contact us btn -->
-
+						<!-- Contact -->
 						<li class="nav-item">
 							<button
 								onclick="window.location.href='contact.html'"
@@ -116,6 +101,21 @@
 							>
 								Contact us
 							</button>
+						</li>
+						<!-- Desktop cart -->
+						<li class="nav-item d-none d-md-block ms-3">
+							<a class="nav-link text-white" href="checkout.html" role="button">
+								<div class="position-relative d-inline-block">
+									<i class="bi bi-bag-heart"></i>
+
+									<span
+										id="cart-count-desktop"
+										class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+										style="font-size: 0.6rem; display: none"
+										>0</span
+									>
+								</div>
+							</a>
 						</li>
 					</ul>
 				</div>
