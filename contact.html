@@ -24,6 +24,7 @@
 		/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
+
 	<body>
 		<nav id="navbar-placeholder"></nav>
 		<div
@@ -57,6 +58,7 @@
 					<label for="nameInput" class="form-label">Full Name</label>
 					<input
 						type="text"
+						name="name"
 						class="form-control"
 						id="nameInput"
 						placeholder="Your name"
@@ -67,6 +69,8 @@
 				<div class="mb-1">
 					<label for="emailInput" class="form-label">Email Address</label>
 					<input
+						required
+						name="email"
 						type="email"
 						class="form-control"
 						id="emailInput"
@@ -78,7 +82,9 @@
 				<div class="mb-1">
 					<label for="locationInput" class="form-label">Location</label>
 					<input
+						required
 						type="text"
+						name="location"
 						class="form-control"
 						id="locationInput"
 						placeholder="Your city or country"
@@ -89,6 +95,8 @@
 				<div class="mb-1">
 					<label for="messageInput" class="form-label">Message</label>
 					<textarea
+						required
+						name="message"
 						class="form-control"
 						id="messageInput"
 						rows="4"
@@ -97,7 +105,11 @@
 				</div>
 
 				<!-- Contact Button -->
-				<button class="sub-btn mb-3 px-4 w-100 contactBtn">Contact us</button>
+				<input
+					class="sub-btn mt-3 mb-3 px-4 w-100 contactBtn"
+					type="submit"
+					value="Contact us"
+				/>
 			</form>
 		</div>
 
@@ -131,5 +143,38 @@
 			integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
 			crossorigin="anonymous"
 		></script>
+
+		<!-- Send email script through emailJS -->
+
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				// https://dashboard.emailjs.com/admin/account
+				emailjs.init({
+					publicKey: "RzsWoHNA_uoOnFZUz",
+				});
+			})();
+		</script>
+		<!-- <script type="text/javascript">
+			window.onload = function () {
+				document
+					.getElementById("contactForm")
+					.addEventListener("submit", function (event) {
+						event.preventDefault();
+						// these IDs from the previous steps
+						emailjs.sendForm("service_a09n0xe", "template_073ytxe", this).then(
+							() => {
+								console.log("SUCCESS!");
+							},
+							(error) => {
+								console.log("FAILED...", error);
+							}
+						);
+					});
+			};
+		</script> -->
 	</body>
 </html>
