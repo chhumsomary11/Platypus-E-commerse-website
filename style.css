@@ -8,36 +8,6 @@
   --bs-dark: #212529;
 }
 
-/* nav design */
-
-.nav-text {
-    color: #fff;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-.nav-text:hover {
-    color: #ffe6f0; /* lighter pink-white hover */
-}
-
-.cart-icon {
-    color: #fff;
-    transition: color 0.3s ease, transform 0.2s ease;
-}
-.cart-icon:hover {
-    color: #ffefef; /* soft hover */
-    transform: scale(1.1);
-}
-
-.contact-btn {
-    border-radius: 25px;
-    padding: 5px 15px;
-    font-weight: 500;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-.contact-btn:hover {
-    background-color: #fff;
-    color: #f48cab;
-}
 
 
 
